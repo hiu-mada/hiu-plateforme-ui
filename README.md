@@ -1,8 +1,9 @@
-## README.md
+# HIU-plateform-api
+[![CI](https://github.com/hiu-mada/hui-plateforme-api/actions/workflows/ci.yml/badge.svg)](https://github.com/hiu-mada/hiu-plateforme-ui/actions/workflows/ci.yml)
+
 
 ### **HIU-PLATEFORME-UI : Plateforme d'évaluation de challenges Cybersec**
-
-## **Description:**
+## **Description:**
 
 HIU-PLATEFORME-UI est une plateforme complète et sécurisée conçue pour l'évaluation de challenges Cybersec. Elle offre un ensemble de fonctionnalités puissantes pour les administrateurs et les participants, permettant une expérience fluide et sécurisée.
 
@@ -49,15 +50,15 @@ Les administrateurs peuvent auditer et suivre en temps réel les activités des 
 Cette fonctionnalité permet de renforcer la sécurité, la responsabilisation et la transparence de la plateforme.
 
 ##  Avantages:
-* ``` Sécurité et fiabilité:
+*  Sécurité et fiabilité:
    Infrastructure robuste et mesures de protection avancées contre les attaques.
-* ``` Flexibilité et personnalisation:
+*  Flexibilité et personnalisation:
   Système d'évaluation adaptable aux besoins spécifiques.
-* ``` Transparence et équité:
+*  Transparence et équité:
   Attribution des points claire et transparente.
-* ``` Motivation et engagement:
+* Motivation et engagement:
    Tableau de bord stimulant la compétition et l'apprentissage.
-* ``` Contrôle et suivi:
+* Contrôle et suivi:
   Gestion des utilisateurs et audit des activités pour une meilleure gouvernance.
 
 ## **Utilisateurs**:
@@ -66,16 +67,12 @@ Organisations: Pour organiser des challenges Cybersec internes ou externes.
 Formateurs: Pour évaluer les compétences des participants en cybersécurité.
 Participants: Pour tester leurs connaissances et se comparer aux autres.
 
-**État CI:**
-
-Status CI: [https://github.com/hiu-mada/hiu-plateforme-ui/actions/runs/8081807178/job/22081207529]
-
-**Prérequis:**
+## **Prérequis:**
 
 * Node.js >= 16.0.0
 * Yarn ou npm
 
-**Installation:**
+## **Installation:**
 
 1. Clonez le dépôt distant :
 
@@ -107,7 +104,7 @@ ou
 npm run dev
 ```
 
-**Utilisation:**
+## **Utilisation:**
 
 * Accédez à l'application dans votre navigateur web à l'adresse `http://localhost:3000`.
 
