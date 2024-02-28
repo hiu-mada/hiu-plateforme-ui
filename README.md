@@ -110,5 +110,6 @@ npm run dev
 
 **Contributeurs:**
 
-* [Liste des contributeurs]
+* [miharyjoe]
+* [Sullivan1301]
 
