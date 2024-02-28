@@ -110,6 +110,6 @@ npm run dev
 
 **Contributeurs:**
 
-* [miharyjoe]
-* [Sullivan1301]
+* **[Mihary Joël](https://github.com/miharyjoe)**
+* **[Rakotoniaina Sullivan](https://github.com/Sullivan1301)**
 
