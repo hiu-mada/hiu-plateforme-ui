@@ -2,11 +2,11 @@
 
 ### **HIU-PLATEFORME-UI : Plateforme d'évaluation de challenges Cybersec**
 
-**Description:**
+## **Description:**
 
 HIU-PLATEFORME-UI est une plateforme complète et sécurisée conçue pour l'évaluation de challenges Cybersec. Elle offre un ensemble de fonctionnalités puissantes pour les administrateurs et les participants, permettant une expérience fluide et sécurisée.
 
- **Fonctionnalités:**
+## **Fonctionnalités:**
   
 * Création des Sujets
 Les administrateurs peuvent créer des challenges en définissant des sujets variés et stimulants.
@@ -48,14 +48,19 @@ La plateforme enregistre des journaux d'activité détaillés pour chaque action
 Les administrateurs peuvent auditer et suivre en temps réel les activités des participants et des administrateurs.
 Cette fonctionnalité permet de renforcer la sécurité, la responsabilisation et la transparence de la plateforme.
 
-* Avantages:
-Sécurité et fiabilité: Infrastructure robuste et mesures de protection avancées contre les attaques.
-Flexibilité et personnalisation: Système d'évaluation adaptable aux besoins spécifiques.
-Transparence et équité: Attribution des points claire et transparente.
-Motivation et engagement: Tableau de bord stimulant la compétition et l'apprentissage.
-Contrôle et suivi: Gestion des utilisateurs et audit des activités pour une meilleure gouvernance.
+##  Avantages:
+* ``` Sécurité et fiabilité:
+   Infrastructure robuste et mesures de protection avancées contre les attaques.
+* ``` Flexibilité et personnalisation:
+  Système d'évaluation adaptable aux besoins spécifiques.
+* ``` Transparence et équité:
+  Attribution des points claire et transparente.
+* ``` Motivation et engagement:
+   Tableau de bord stimulant la compétition et l'apprentissage.
+* ``` Contrôle et suivi:
+  Gestion des utilisateurs et audit des activités pour une meilleure gouvernance.
 
-* **Utilisateurs**:
+## **Utilisateurs**:
 
 Organisations: Pour organiser des challenges Cybersec internes ou externes.
 Formateurs: Pour évaluer les compétences des participants en cybersécurité.
@@ -63,7 +68,7 @@ Participants: Pour tester leurs connaissances et se comparer aux autres.
 
 **État CI:**
 
-Status CI: [URL non valide supprimée]
+Status CI: [https://github.com/hiu-mada/hiu-plateforme-ui/actions/runs/8081807178/job/22081207529]
 
 **Prérequis:**
 
