@@ -5,7 +5,7 @@
 ### **HIU-PLATEFORME-UI : Plateforme d'évaluation de challenges Cybersec**
 ## **Description:**
 
-HIU-PLATEFORME-UI est une plateforme complète et sécurisée conçue pour l'évaluation de challenges Cybersec. Elle offre un ensemble de fonctionnalités puissantes pour les administrateurs et les participants, permettant une expérience fluide et sécurisée.
+*HIU-PLATEFORME-UI* est une plateforme complète et sécurisée conçue pour l'évaluation de challenges Cybersec. Elle offre un ensemble de fonctionnalités puissantes pour les administrateurs et les participants, permettant une expérience fluide et sécurisée.
 
 ## **Fonctionnalités:**
   
@@ -63,9 +63,9 @@ Cette fonctionnalité permet de renforcer la sécurité, la responsabilisation e
 
 ## **Utilisateurs**:
 
-Organisations: Pour organiser des challenges Cybersec internes ou externes.
-Formateurs: Pour évaluer les compétences des participants en cybersécurité.
-Participants: Pour tester leurs connaissances et se comparer aux autres.
+- **Organisations :** Pour organiser des challenges Cybersec internes ou externes.
+- **Formateurs :** Pour évaluer les compétences des participants en cybersécurité.
+- **Participants:** Pour tester leurs connaissances et se comparer aux autres.
 
 ## **Prérequis:**
 
