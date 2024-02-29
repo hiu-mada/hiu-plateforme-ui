@@ -4,7 +4,6 @@ import * as z from "zod"
 import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import render from "react-dom"
 import { 
       Form, 
       FormControl,
@@ -18,7 +17,7 @@ import {FaFacebook, FaGithub, FaGoogle } from "react-icons/fa"
 import Link from "next/link";
 
 const signUpSchema = z.object({
-  name: z.string().min(2, "Name should have atleast 2 characters").max(50," Name should not exceed 50 characters.").refine((value)=> /^[a-zA-Z+[-'s]?[a-zA-Z ]+$/.test(value), 'Name shourd contain only alphabets.'),
+  name: z.string().min(2, "Name should have at least 2 characters").max(50, "Name should not exceed 50 characters.").refine((value) => /^[a-zA-Z+'s-]?[a-zA-Z ]+$/.test(value), 'Name should contain only alphabets.'),
   email: z.string().email("Email must be valid"),
   password: z.string().min(8,"Password should have must 8 characters."),
   confirmPassword: z.string().min(8, "Password should be have 8 characters.")
@@ -27,7 +26,7 @@ const signUpSchema = z.object({
   path: ["confirmPassword"],
 });
 
-const Page = () => {
+const sign_up_page = () => {
   const form = useForm<z.infer<typeof signUpSchema>>({
     resolver:zodResolver(signUpSchema),
     defaultValues:{
@@ -57,7 +56,7 @@ const Page = () => {
           </div>
           <div className="rigth">
             <h3 className="text-center text-2xl font-semifold">Register Here</h3>
-            <div className="socialSignUpoptions">
+            <div className="socialSignUpOptions">
               <Button variant={"outline"} className="socialFormBtn"><FaGoogle className="h-5 w-5"/></Button>
               <Button variant={"outline"} className="socialFormBtn"><FaFacebook className="h-5 w-5"/></Button>
               <Button variant={"outline"} className="socialFormBtn"><FaGithub className="h-5 w-5"/></Button>
@@ -131,4 +130,4 @@ const Page = () => {
   )
 }
 
-export default Page;
+export default sign_up_page;

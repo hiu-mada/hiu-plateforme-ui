@@ -82,3 +82,26 @@
 .formWrapper{
   @apply flex items-center border bg-primary shadow-md rounded-lg overflow-hidden justify-center w-[20rem] mx-6 md:w-auto my-6
 }
+
+.signUpWrapper .left,
+.logInWrapper .left {
+  @apply bg-primary text-muted hidden md:flex justify-center items-center flex-col
+}
+
+.signUpWrapper .left .title,
+.logInWrapper .left .title {
+  @apply text-2xl font-semibold
+}
+
+.signUpWrapper .right,
+.logInWrapper .right{
+  @apply px-4 py-4 my-4 mx-4 md:w-1/2 w-[20rem] bg-white rounded-lg
+}
+
+.socialFormBtn{
+  @apply rounded-full h-[2.5rem] w-[2.5rem] p-0 mx-2 border-blue-300
+}
+
+.socialSignUpOptions{
+  @apply my-3 justify-center items-center
+}
