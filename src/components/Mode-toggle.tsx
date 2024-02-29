@@ -13,8 +13,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-export function ModeToggle() {
-  const { setTheme } = useTheme()
+export function ModeToggle({className} : {className : string}) {
+  const { setTheme } = useTheme(
+
+  )
 
   return (
     <DropdownMenu>
