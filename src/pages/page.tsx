@@ -4,6 +4,7 @@ import * as z from "zod"
 import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import render from "react-dom"
 import { 
       Form, 
       FormControl,
@@ -13,8 +14,8 @@ import {
       FormMessage
     } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import {FaFacebook, FaGithub, FaGoogle} from "react-icons"
-import { Link } from "next/link";
+import {FaFacebook, FaGithub, FaGoogle } from "react-icons/fa"
+import Link from "next/link";
 
 const signUpSchema = z.object({
   name: z.string().min(2, "Name should have atleast 2 characters").max(50," Name should not exceed 50 characters.").refine((value)=> /^[a-zA-Z+[-'s]?[a-zA-Z ]+$/.test(value), 'Name shourd contain only alphabets.'),
@@ -55,8 +56,74 @@ const Page = () => {
             </Link>
           </div>
           <div className="rigth">
-            
-
+            <h3 className="text-center text-2xl font-semifold">Register Here</h3>
+            <div className="socialSignUpoptions">
+              <Button variant={"outline"} className="socialFormBtn"><FaGoogle className="h-5 w-5"/></Button>
+              <Button variant={"outline"} className="socialFormBtn"><FaFacebook className="h-5 w-5"/></Button>
+              <Button variant={"outline"} className="socialFormBtn"><FaGithub className="h-5 w-5"/></Button>
+            </div>
+            <p className="text-center">or use this option </p>
+            <Form { ... form}>
+              <form onSubmit={form.handleSubmit(onSubmit)}>
+                <FormField 
+                control={form.control}
+                name="name"
+                render ={({ field })=> 
+                <FormItem className="space-y-0 mb-2">
+                  <FormLabel>Name</FormLabel>
+                  <FormControl>
+                    <Input placeholder="HIU Madagascar"
+                      {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+                }
+                />
+                <FormField 
+                control={form.control}
+                name="email"
+                render ={({ field })=> 
+                <FormItem className="space-y-0 mb-2">
+                  <FormLabel>Email</FormLabel>
+                  <FormControl>
+                    <Input placeholder="HIUMadagascar@gmail.com"
+                      {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+                }
+                />
+                <FormField 
+                control={form.control}
+                name="password"
+                render ={({ field })=> 
+                <FormItem className="space-y-0 mb-2">
+                  <FormLabel>Password</FormLabel>
+                  <FormControl>
+                    <Input placeholder="********"
+                     type="password" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+                }
+                />
+                <FormField 
+                control={form.control}
+                name="name"
+                render ={({ field })=> 
+                <FormItem className="space-y-0 mb-2">
+                  <FormLabel>Confirm Password</FormLabel>
+                  <FormControl>
+                    <Input placeholder="********"
+                     type="password" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+                }
+                />
+                <Button type="submit" className="w-full">Submit</Button>
+              </form>
+            </Form>
           </div>
         </div>
       </div>
