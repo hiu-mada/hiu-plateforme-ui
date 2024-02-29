@@ -74,3 +74,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.signUpWrapper, .logInWrapper{
+  @apply h-screen w-full flex justify-center items-center
+}
+
+.formWrapper{
+  @apply flex items-center border bg-primary shadow-md rounded-lg overflow-hidden justify-center w-[20rem] mx-6 md:w-auto my-6
+}
