@@ -1,8 +1,10 @@
 "use client"
 import Landing from '@/components/Landing';
+import ListComponent from '@/components/ListComponent';
 import { Boxes } from '@/components/ui/background-boxes';
 import { cn } from '@/lib/utils';
-
+import { university } from '@/lib/listUniversity';
+import { partner } from '@/lib/ListPartner';
 const HomePage = () => {
   return (
   <>
@@ -15,6 +17,10 @@ const HomePage = () => {
       <Landing/>
       </div>
     </div>
+  </section>
+  <section className="mt-5">
+    <ListComponent list = {university} name={{name : "university"}}/>
+    <ListComponent list = {partner} name={{name : "Partner"}}/>
   </section>
   </>
   );
