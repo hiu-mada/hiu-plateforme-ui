@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata ={
-    title : "Sign Up HIU Madagascar",
-    description: "HUI Platform",
+    title : "HIU Madagascar",
+    description: "Sign up for HUI Platform",
 }
 
 const sign_up_layout = ({
@@ -19,4 +19,4 @@ const sign_up_layout = ({
     );
 };
 
-sign_up_layout;
+export default sign_up_layout;

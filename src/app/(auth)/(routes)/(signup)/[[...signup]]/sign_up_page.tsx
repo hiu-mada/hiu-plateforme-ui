@@ -26,7 +26,7 @@ const signUpSchema = z.object({
   path: ["confirmPassword"],
 });
 
-const sign_up_page = () => {
+const Page = () => {
   const form = useForm<z.infer<typeof signUpSchema>>({
     resolver:zodResolver(signUpSchema),
     defaultValues:{
@@ -130,4 +130,4 @@ const sign_up_page = () => {
   )
 }
 
-export default sign_up_page;
+export default Page;
