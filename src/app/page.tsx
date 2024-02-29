@@ -1,13 +1,7 @@
 import { ModeToggle } from "@/components/Mode-toggle";
-import Image from "next/image";
+import HomePage from "./home/page";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <main>
-        <h1>
-        Hello whold!!
-        </h1>
-        <ModeToggle/>
-    </main>
-    );
+  return redirect("/home");
 }
