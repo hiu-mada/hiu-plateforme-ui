@@ -12,9 +12,9 @@ interface linkProps {
 
 const links: linkProps[] = [
   { name: "Home", href: "/home" },
-  { name: "Vote", href: "/home/vote" },
-  { name: "List Participant", href: "/home/list" },
-  { name: "Subject", href: "/home/subject" },
+  { name: "Voting", href: "/vote" },
+  { name: "List Participant", href: "/list" },
+  { name: "Subject", href: "/subject" },
 
 ];
 
@@ -25,7 +25,7 @@ export const NavBar = () => {
       <div className="flex items-center">
         <Link href="/home" className="w-32">
          {/*<Image src={Logo} alt="logo netflix" priority />*/}
-          <h1 className="font-bold ">Hack-IO</h1>
+          <h1 className="font-bold text-xl">Hack-IO</h1>
         </Link>
         <ul className="lg:flex gap-x-4 ml-14 hidden ">
           {links.map((link, idx) => (
@@ -34,7 +34,7 @@ export const NavBar = () => {
                 <li>
                   <Link
                     href={link.href}
-                    className="font-semibold underline text-sm "
+                    className="font-semibold underline text-sm-5 "
                   >
                     {link.name}
                   </Link>
@@ -42,7 +42,7 @@ export const NavBar = () => {
               ) : (
                 <li>
                   <Link
-                    className="font-normal text-sm"
+                    className="font-normal text-sm-5"
                     href={link.href}
                   >
                     {link.name}
