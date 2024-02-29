@@ -6,7 +6,7 @@ export const metadata: Metadata ={
     description: "Sign up for HUI Platform",
 }
 
-const sign_up_layout = ({
+const Layout = ({
     children,
 }:{
     children:React.ReactNode
@@ -19,4 +19,4 @@ const sign_up_layout = ({
     );
 };
 
-export default sign_up_layout;
+export default Layout;
