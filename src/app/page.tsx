@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import SignInForm from "../pages/sign_up";
+import SignInForm from "../pages/page";
 import SignUpForm from "../pages/log_in";
 
 

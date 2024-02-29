@@ -46,10 +46,22 @@ const Page = () => {
   return (
     <>
       <div className="signUpWrapper">
-      
+        <div className="formWrapper">
+          <div className="left">
+            <h3 className="title"> Welcome Back!</h3>
+            <p>To keep connected with us, Please login with your personal info</p>
+            <Link href ={"/log_in"}>
+              <Button className="border-blue-500 text-zinc-300 hover:border-blue-700 hover:text-zinc-200 transition-colors border rounded-full px-8">Log In</Button>
+            </Link>
+          </div>
+          <div className="rigth">
+            
+
+          </div>
+        </div>
       </div>
     </>
   )
-  }
+}
 
 export default Page;
