@@ -1,40 +1,33 @@
-import React from 'react';
+"use client"
 import { ChallengerTeam } from './mock/ParticipantListMock';
-import styles from '../../app/styles/ParticipantList.module.css'
+import styles from '../styles/ParticipantList.module.css'
+import { useState } from 'react';
+import Link from 'next/link';
 
-interface ChallengerTeam {
-    id: number;
-    name: string;
-    slogan: string;
-    subject: Subject
-    votes: number;
-    User: User[];
-    University: University;
-    Votes: number;
-}
-
-interface Subject {
-    name: string;
-    description: string;
-}
-
-interface University {
-    name: string;
-    url: string;
-}
-interface User {
-    id: number;
-    username: string;
-    email: string;
-    password: string;
-    profile_picture: string;
-}
 const ParticipantList: React.FC = () => {
+    const [searchTerm, setSearchTerm] = useState('');
 
+    const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchTerm(event.target.value);
+    };
     return (
         <>
+
+            <div className={styles.searchContainer}>
+                <input
+                    type="text"
+                    placeholder="Search here..."
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                    className={styles.searchInput}
+                />
+            </div>
             <div className={styles.teamList}>
-                {ChallengerTeam.map(team => (
+                {ChallengerTeam.filter(team =>
+                    team.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    team.University.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    team.subject.name.toLowerCase().includes(searchTerm.toLowerCase())
+                ).map(team => (
                     <div key={team.id} className={styles.team}>
                         <div className={styles.name_votes} >
                             <h1 className={styles.name}>{team.name}</h1>
@@ -60,8 +53,9 @@ const ParticipantList: React.FC = () => {
                                 )}
                             </div>
                         </div>
-
-                        <button className={styles.button} >Details</button>
+                        <Link href={`/details/${team.id}`} className={styles.button} >
+                            Details
+                        </Link>
                     </div>
                 ))}
             </div>

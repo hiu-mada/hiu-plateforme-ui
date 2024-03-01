@@ -32,7 +32,7 @@
 .subjectText {
     font-weight: bold;
     margin-bottom: 10px;
-    color: rgb(164, 164, 164);
+    color: rgb(110, 108, 108);
 }
 
 .University {
@@ -72,11 +72,11 @@
 .user_pic {
     display: flex;
     flex-direction: row;
-    color: rgb(176, 85, 176);
+    color: rgb(231, 87, 87);
 }
 
 .button {
-    background-color: #007bff;
+    background-color: #005187;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -86,12 +86,26 @@
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #005187;
 }
 
 .votes {
-    background-color: #b9d7f6;
-    color: #07488d;
+    background-color: rgb(231, 87, 87);
+    color: white;
     padding: 10px;
     border-radius: 30px;
+}
+
+.searchContainer {
+    margin: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
 }

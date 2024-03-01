@@ -1,9 +1,10 @@
-import ParticipantList from "./component/ParticipantList";
+import ParticipantList from "../../components/ParticipantList";
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
       <ParticipantList/>
     </main>
   );
 }
+export default Home;

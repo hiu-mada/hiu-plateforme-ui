@@ -1,7 +1,7 @@
 export const ChallengerTeam = [
     {
         id: 1,
-        name: "Name1",
+        name: "ame1",
         slogan: "Slogan1",
         subject: {
             name: "sujets1",
@@ -53,7 +53,7 @@ export const ChallengerTeam = [
         ],
         University:
         {
-            name: "university1",
+            name: "niversity1",
             url:'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
         },
         votes: 2
@@ -137,4 +137,4 @@ export const ChallengerTeam = [
         },
         votes: 0,
     },
-]
+];
