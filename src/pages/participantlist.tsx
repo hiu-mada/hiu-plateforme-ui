@@ -1,5 +1,5 @@
 "use client"
-import { ChallengerTeam } from './mock/ParticipantListMock';
+import { ChallengerTeam } from '../components/mock/ParticipantListMock';
 import styles from '../styles/ParticipantList.module.css'
 import { useState } from 'react';
 import Link from 'next/link';

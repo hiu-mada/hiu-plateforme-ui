@@ -1,10 +1,7 @@
-import ParticipantList from "../../components/ParticipantList";
+import { ModeToggle } from "@/components/Mode-toggle";
+import HomePage from "./home/page";
+import { redirect } from "next/navigation";
 
-const Home = () => {
-  return (
-    <main>
-      <ParticipantList/>
-    </main>
-  );
+export default function Home() {
+  return redirect("/home");
 }
-export default Home;
