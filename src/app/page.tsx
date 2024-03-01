@@ -1,11 +1,7 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { ModeToggle } from "@/components/Mode-toggle";
+import HomePage from "./home/page";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <>  
-    <h2 className="justify-center items-center">Welcome to Hackaton Inter-University of Madagascar</h2>
-    <Link href="/signup"><Button>Click Here</Button></Link>
-    </>
-  )
+  return redirect("/home");
 }
