@@ -1,0 +1,97 @@
+.teamList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.team {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30em;
+    margin-top: 2em;
+}
+
+.name {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.styleslogan {
+    border: solid 1px rgb(164, 164, 164);
+    color: rgb(164, 164, 164);
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+.subjectText {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(164, 164, 164);
+}
+
+.University {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgb(164, 164, 164);
+}
+
+
+.profile_pic_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile_pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.user_pic_subject {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name_votes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.user_pic {
+    display: flex;
+    flex-direction: row;
+    color: rgb(176, 85, 176);
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.votes {
+    background-color: #b9d7f6;
+    color: #07488d;
+    padding: 10px;
+    border-radius: 30px;
+}
