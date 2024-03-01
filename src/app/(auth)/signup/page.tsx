@@ -49,13 +49,14 @@ const Page = () => {
         <div className="formWrapper">
           <div className="left">
             <h3 className="title"> Welcome Back!</h3>
-            <p>To keep connected with us, Please login with your personal info</p>
-            <Link href ={"/log_in"}>
-              <Button className="border-blue-500 text-zinc-300 hover:border-blue-700 hover:text-zinc-200 transition-colors border rounded-full px-8">Log In</Button>
+            <p>To keep connected with us,
+               Please login with your personal info</p>
+            <Link href ={"/login"}>
+              <Button className="border-blue-500 text-stone-300 hover:border-blue-800 hover:text-black hover:bg-white transition-colors border rounded-full px-8">Log In</Button>
             </Link>
           </div>
-          <div className="rigth">
-            <h3 className="text-center text-2xl font-semifold">Register Here</h3>
+          <div className="rigth bg-white">
+            <h3 className="text-center text-2xl font-semiold">Register Here</h3>
             <div className="socialSignUpOptions">
               <Button variant={"outline"} className="socialFormBtn"><FaGoogle className="h-5 w-5"/></Button>
               <Button variant={"outline"} className="socialFormBtn"><FaFacebook className="h-5 w-5"/></Button>
@@ -71,7 +72,7 @@ const Page = () => {
                 <FormItem className="space-y-0 mb-2">
                   <FormLabel>Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="HIU Madagascar"
+                    <Input placeholder="Hack-IU"
                       {...field} />
                   </FormControl>
                   <FormMessage />
@@ -85,7 +86,7 @@ const Page = () => {
                 <FormItem className="space-y-0 mb-2">
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="HIUMadagascar@gmail.com"
+                    <Input placeholder="Hack-IU@gmail.com"
                       {...field} />
                   </FormControl>
                   <FormMessage />
@@ -120,7 +121,7 @@ const Page = () => {
                 </FormItem>
                 }
                 />
-                <Button type="submit" className="w-full">Submit</Button>
+                <Button type="submit" className="mx-20 hover:text-black hover:bg-zinc-300 hover:border-blue-800 items-center justify-center">Submit</Button>
               </form>
             </Form>
           </div>

@@ -76,7 +76,7 @@
 }
 
 .signUpWrapper, .logInWrapper{
-  @apply h-screen w-full flex justify-center items-center
+  @apply h-screen w-full flex flex-row justify-center items-center
 }
 
 .formWrapper{
@@ -99,9 +99,9 @@
 }
 
 .socialFormBtn{
-  @apply rounded-full h-[2.5rem] w-[2.5rem] p-0 mx-2 border-blue-300
+  @apply rounded-full h-[2.5rem] w-[2.5rem] p-0 mx-2 border-blue-800
 }
 
 .socialSignUpOptions{
-  @apply my-3 justify-center items-center
+  @apply my-3 justify-center items-center 
 }

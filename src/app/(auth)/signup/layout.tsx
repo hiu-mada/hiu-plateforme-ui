@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata ={
-    title : "HIU Madagascar",
+    title : "Hack-IU",
     description: "Sign up for HUI Platform",
 }
 
