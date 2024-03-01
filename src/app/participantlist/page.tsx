@@ -1,10 +1,9 @@
 "use client"
-import { ChallengerTeam } from '../components/mock/ParticipantListMock';
-import styles from '../styles/ParticipantList.module.css'
+import styles from '../../styles/ParticipantList.module.css'
 import { useState } from 'react';
 import Link from 'next/link';
-
-const ParticipantList: React.FC = () => {
+import { ChallengerTeam } from '@/components/mock/ParticipantListMock';
+const Page = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -53,7 +52,7 @@ const ParticipantList: React.FC = () => {
                                 )}
                             </div>
                         </div>
-                        <Link href={`/details/${team.id}`} className={styles.button} >
+                        <Link href={`/participantlist/${team.id}`} className={styles.button} >
                             Details
                         </Link>
                     </div>
@@ -61,6 +60,6 @@ const ParticipantList: React.FC = () => {
             </div>
         </>
     );
-};
+}
 
-export default ParticipantList;
+export default Page;

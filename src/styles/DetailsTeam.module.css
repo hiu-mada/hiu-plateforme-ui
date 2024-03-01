@@ -59,7 +59,7 @@
 }
 
 .team_description {
-    margin: 6em;
+    margin: 5em 10em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -82,18 +82,24 @@
     background-color: #1b2028;
     color: white;
     padding-top: 5px;
+    margin-bottom: 5px;
 }
 
 .team_description_votes h1 {
-    padding: 10px;
+    padding: 25px 25px 10px 25px;
+    font-size: 25px
 }
 
 .subject {
     color: grey;
+    
+}
+.subject h1{ 
+    font-size: 25px;
 }
 
 .team_text {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .team_text p {

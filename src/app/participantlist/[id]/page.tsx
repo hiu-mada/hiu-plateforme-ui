@@ -1,9 +1,9 @@
-import { useRouter } from 'next/router';
+"use client"
 import { useEffect, useState } from 'react';
-import { ChallengerTeam } from '../../components/mock/ParticipantListMock';
-import { TeamChallenge } from '../../components/utils/type';
+import { ChallengerTeam } from '../../../components/mock/ParticipantListMock';
+import { TeamChallenge } from '../../../components/utils/type';
 import { useParams } from 'next/navigation';
-import styles from '../../styles/DetailsTeam.module.css'
+import styles from '../../../styles/DetailsTeam.module.css'
 const Details = () => {
     const params = useParams();
     console.log(params?.id)
