@@ -34,13 +34,16 @@ export default function SideBar() {
             <VoteIcon className="mr-4 h-4 w-4" />
             Vote
           </Link>
+          <Link
+            className="flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
+            href="#"
+          >
+
+            <LogOutIcon className="mr-4 h-4 w-4" />
+            Logout
+          </Link>
         </div>
       </nav>
-      <div className="flex items-center h-14 px-4">
-        <Button className="ml-auto h-9 w-14" variant="ghost">
-          <LogOutIcon className="h-4 w-4" />
-        </Button>
-      </div>
     </div>
   )
 }
@@ -66,7 +69,7 @@ function HomeIcon(props: any) {
 }
 
 
-function LogOutIcon(props : any) {
+function LogOutIcon(props: any) {
   return (
     <svg
       {...props}
@@ -88,7 +91,7 @@ function LogOutIcon(props : any) {
 }
 
 
-function ReplyIcon(props :any) {
+function ReplyIcon(props: any) {
   return (
     <svg
       {...props}
@@ -109,7 +112,7 @@ function ReplyIcon(props :any) {
 }
 
 
-function UserIcon(props : any) {
+function UserIcon(props: any) {
   return (
     <svg
       {...props}
@@ -130,7 +133,7 @@ function UserIcon(props : any) {
 }
 
 
-function VoteIcon(props :any) {
+function VoteIcon(props: any) {
   return (
     <svg
       {...props}
