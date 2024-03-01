@@ -88,8 +88,6 @@ const config = {
   plugins: [require("tailwindcss-animate"), addVariablesForColors],
 } satisfies Config;
 
-export default config;
-
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
@@ -100,3 +98,5 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
+
+export default config
