@@ -2,7 +2,7 @@ import React from 'react'
 
 const Subject = () => {
   return (
-    <div></div>
+    <div>subject</div>
   )
 }
 

@@ -1,53 +1,60 @@
+"use client"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { usePathname } from "next/navigation";
 
 export default function SideBar() {
+  const pathname = usePathname();
+
   return (
     <div className="flex flex-col h-full border-r border-gray-200 dark:border-gray-950">
       <nav className="flex-1 overflow-y-auto py-2">
         <div className="grid gap-2">
           <Link
-            className="flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium bg-gray-100/50 transition-colors hover:bg-gray-100 dark:bg-gray-800/50 dark:hover:bg-gray-800"
-            href="#"
+            className={`flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium ${pathname === "/admin" ? "bg-gray-100/50" : ""
+              } transition-colors hover:bg-gray-100 dark:hover:bg-gray-800`}
+            href="/admin"
           >
             <HomeIcon className="mr-4 h-4 w-4" />
             Home
           </Link>
           <Link
-            className="flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
-            href="#"
+            className={`flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium ${pathname === "/admin/subject" ? "bg-gray-100/50" : ""
+              } transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800`}
+            href="/admin/subject"
           >
             <UserIcon className="mr-4 h-4 w-4" />
             Subject
           </Link>
           <Link
-            className="flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
-            href="#"
+            className={`flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium ${pathname === "/admin/response" ? "bg-gray-100/50" : ""
+              } transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800`}
+            href="/admin/response"
           >
             <ReplyIcon className="mr-4 h-4 w-4" />
             Response
           </Link>
           <Link
-            className="flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
-            href="#"
+            className={`flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium ${pathname === "/admin/vote" ? "bg-gray-100/50" : ""
+              } transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800`}
+            href="/admin/vote"
           >
             <VoteIcon className="mr-4 h-4 w-4" />
             Vote
           </Link>
           <Link
-            className="flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800"
+            className={`flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium ${pathname === "/" ? "bg-gray-100/50" : ""
+              } transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800`}
             href="#"
           >
-
             <LogOutIcon className="mr-4 h-4 w-4" />
             Logout
           </Link>
         </div>
       </nav>
     </div>
-  )
+  );
 }
-
 function HomeIcon(props: any) {
   return (
     <svg
