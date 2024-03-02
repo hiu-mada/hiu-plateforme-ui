@@ -4,7 +4,7 @@ export const ChallengerTeam = [
         name: "ame1",
         slogan: "Slogan1",
         subject: {
-            name: "sujets1",
+            name: "sujet 1",
             description:  "description",
         },
         User: [
@@ -56,7 +56,10 @@ export const ChallengerTeam = [
             name: "niversity1",
             url:'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
         },
-        votes: 2
+        votes: 0,
+        vote: function() {
+            this.votes++;
+        }
     },
     {
         id: 2,
@@ -81,6 +84,9 @@ export const ChallengerTeam = [
             url:'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
         },
         votes: 0,
+        vote: function() {
+            this.votes++;
+        }
     },
     {
         id: 3,
@@ -112,6 +118,9 @@ export const ChallengerTeam = [
             url:'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
         },
         votes: 0,
+        vote: function() {
+            this.votes++;
+        }
     },
     {
         id: 4,
@@ -136,5 +145,8 @@ export const ChallengerTeam = [
             url: "https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg",
         },
         votes: 0,
+        vote: function() {
+            this.votes++;
+        }
     },
 ];
