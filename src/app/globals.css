@@ -65,103 +65,18 @@
     --ring: 212.7 26.8% 83.9%;
   }
 }
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
- 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
- 
-    --primary: 220.9 39.3% 11%;
-    --primary-foreground: 210 20% 98%;
- 
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
- 
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
- 
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220.9 39.3% 11%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 224 71.4% 4.1%;
- 
-    --radius: 0.5rem;
-  }
- 
-  .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
- 
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
- 
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
- 
-    --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
- 
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
- 
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
- 
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
- 
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
-  }
-}
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
 
 .signUpWrapper, .logInWrapper{
   @apply h-screen w-full flex flex-row justify-center items-center
 }
 
 .formWrapper{
-  @apply flex items-center border bg-primary shadow-md rounded-lg overflow-hidden justify-center w-[20rem] mx-6 md:w-auto my-6
+  @apply flex items-center border shadow-md rounded-lg overflow-hidden justify-center w-[25rem] md:w-auto my-6 mx-6
 }
 
 .signUpWrapper .left,
 .logInWrapper .left {
-  @apply bg-primary text-muted hidden md:flex justify-center items-center flex-col
+  @apply  text-muted hidden md:flex justify-center items-center flex-col
 }
 
 .signUpWrapper .left .title,
@@ -171,13 +86,13 @@
 
 .signUpWrapper .right,
 .logInWrapper .right{
-  @apply px-4 py-4 my-4 mx-4 md:w-1/2 w-[20rem] bg-white rounded-lg
+  @apply px-4 py-4 my-4 mx-4 md:w-1/2 w-[25rem] bg-white rounded-lg
 }
 
 .socialFormBtn{
-  @apply rounded-full h-[2.5rem] w-[2.5rem] p-0 mx-2 border-blue-800
+  @apply rounded-full h-[2.5rem] w-[2.5rem] p-2 mx-2 border-blue-800 gap-4
 }
 
 .socialSignUpOptions{
-  @apply my-3 justify-center items-center 
+  @apply my-3 justify-center items-center mx-4
 }
