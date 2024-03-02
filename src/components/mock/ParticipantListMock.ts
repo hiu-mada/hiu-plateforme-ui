@@ -13,48 +13,48 @@ export const ChallengerTeam = [
                 username: 'user1',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
             {
                 id: 2,
                 username: 'user1',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
             {
                 id: 3,
                 username: 'user1',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
             {
                 id: 4,
                 username: 'user1',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
             {
                 id: 5,
                 username: 'user1',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
             {
                 id: 6,
                 username: 'user1',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/image.png'
             },
         ],
         University:
         {
             name: "niversity1",
-            url:'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+            url:'/HEI.png'
         },
         votes: 0,
         vote: function() {
@@ -75,13 +75,13 @@ export const ChallengerTeam = [
                 username: 'user2',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
         ],
         University:
         {
             name: "university2",
-            url:'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+            url:'/HEI.png'
         },
         votes: 0,
         vote: function() {
@@ -102,20 +102,20 @@ export const ChallengerTeam = [
                 username: 'user2',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
             {
                 id: 2,
                 username: 'user2',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
         ],
         University:
         {
             name: "university2",
-            url:'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+            url:'/HEI.png'
         },
         votes: 0,
         vote: function() {
@@ -136,13 +136,13 @@ export const ChallengerTeam = [
                 username: 'user2',
                 email: 'email',
                 password: 'password',
-                profile_picture: 'https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg'
+                profile_picture: '/images.png'
             },
         ],
         University:
         {
             name: "university2",
-            url: "https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg",
+            url: "/HEI.png",
         },
         votes: 0,
         vote: function() {

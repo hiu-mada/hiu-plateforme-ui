@@ -30,7 +30,7 @@ const Page = () => {
         <>
             <div className={styles.voting} >
                 {ChallengerTeam.map(team => (
-                    <div className={styles.votingchild}  >
+                    <div className={styles.votingchild} key={team.id} >
                         <input
                             className={styles.input}
                             type="radio"

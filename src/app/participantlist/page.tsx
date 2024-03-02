@@ -3,6 +3,7 @@ import styles from '../../styles/ParticipantList.module.css'
 import { useState } from 'react';
 import Link from 'next/link';
 import { ChallengerTeam } from '@/components/mock/ParticipantListMock';
+import Image from 'next/image';
 const Page = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
@@ -42,7 +43,17 @@ const Page = () => {
                                 <ul className={styles.profile_pic_list} >
                                     {team.User?.slice(0, 2).map(user => (
                                         <li key={user.id}>
-                                            <img className={styles.profile_pic} src={user.profile_picture} alt="" />
+                                            <Image
+                                                src={user.profile_picture}
+                                                width={35}
+                                                height={35} 
+                                                style={{
+                                                  borderRadius: '50%',
+                                                  overflow: 'hidden',
+                                                  border: '2px solid #fff',
+                                                }}
+                                                alt=""
+                                            />
                                         </li>
                                     ))}
                                 </ul>

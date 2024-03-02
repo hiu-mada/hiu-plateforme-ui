@@ -4,6 +4,7 @@ import { ChallengerTeam } from '../../../components/mock/ParticipantListMock';
 import { TeamChallenge } from '../../../components/utils/type';
 import { useParams } from 'next/navigation';
 import styles from '../../../styles/DetailsTeam.module.css'
+import Image from 'next/image';
 const Details = () => {
     const params = useParams();
     console.log(params?.id)
@@ -47,8 +48,21 @@ const Details = () => {
                         <ul className={styles.profile_teams_list}>
                             {team.User.map(user => (
                                 <li key={user.id}>
-                                    <div className={styles.profile_image} >
-                                        <img src={user.profile_picture} alt="user_profile" />
+                                    <div  >
+                                        <Image
+                                            src={user.profile_picture}
+                                            alt="user_profile"
+                                            width={200}
+                                            height={200}
+                                            style={{
+                                                borderRadius: '50%',
+                                                overflow: 'hidden',
+                                                width: '20em',
+                                                height: '20em',
+                                                position: 'relative',
+                                                margin: '25px',
+                                            }}
+                                        />
                                     </div>
                                     <h2 className={styles.profile_username} > {user.username} </h2>
                                     <p className={styles.profile_email} > {user.email} </p>
