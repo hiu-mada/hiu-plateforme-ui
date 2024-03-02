@@ -18,4 +18,5 @@ export type TeamChallenge = {
         url: string;
     };
     votes: number;
+    vote: () => void; 
 };
