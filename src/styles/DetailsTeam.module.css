@@ -1,0 +1,114 @@
+.profile_teams_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    text-align: center;
+    color: #f1f3f3;
+}
+
+.profile_teams_list li {
+    background-color: #1b2028;
+    border-radius: 16px;
+    position: relative;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    text-align: center;
+    color: #f1f3f3;
+    margin: 15px;
+}
+
+.profile_image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 20em;
+    height: 20em;
+    position: relative;
+    margin: 25px;
+}
+
+.profile_image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.profile_username {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.profile_email {
+    color: #7d8396;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+.team_layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.team_description {
+    margin: 5em 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.team_description img {
+    width: 12em;
+    height: 12em;
+    margin: 1em;
+    border-radius: 50%;
+}
+
+.team_members li {
+    list-style: none;
+}
+
+.team_description_votes {
+    background-color: #1b2028;
+    color: white;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.team_description_votes h1 {
+    padding: 25px 25px 10px 25px;
+    font-size: 25px
+}
+
+.subject {
+    color: grey;
+    
+}
+.subject h1{ 
+    font-size: 25px;
+}
+
+.team_text {
+    padding-top: 30px;
+}
+
+.team_text p {
+    color: grey;
+    font-size: 20px;
+}
+
+.team_text h1 {
+    font-size: 35px;
+}
+
+
