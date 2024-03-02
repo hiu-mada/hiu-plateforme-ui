@@ -16,7 +16,7 @@ export default function SideBar() {
             href="/admin"
           >
             <HomeIcon className="mr-4 h-4 w-4" />
-            Home
+            Dashboard
           </Link>
           <Link
             className={`flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium ${pathname === "/admin/subject" ? "bg-gray-100/50" : ""
