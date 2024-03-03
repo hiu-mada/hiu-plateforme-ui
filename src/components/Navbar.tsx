@@ -25,7 +25,7 @@ export const NavBar = () => {
       <div className="flex items-center">
         <Link href="/home" className="w-32">
          {/*<Image src={Logo} alt="logo netflix" priority />*/}
-          <h1 className="font-bold text-xl">Hack-IO</h1>
+          <h1 className="font-bold text-xl">Hack-IU</h1>
         </Link>
         <ul className="lg:flex gap-x-4 ml-14 hidden ">
           {links.map((link, idx) => (

@@ -110,7 +110,7 @@ const Page = () => {
                 />
                 <FormField 
                 control={form.control}
-                name="name"
+                name="confirmPassword"
                 render ={({ field })=> 
                 <FormItem className="space-y-0 mb-2">
                   <FormLabel>Confirm Password</FormLabel>
