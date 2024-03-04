@@ -10,14 +10,14 @@ export default function SideBar() {
     <div className="flex flex-col h-full border-r border-gray-200 dark:border-gray-950">
       <nav className="flex-1 overflow-y-auto py-2">
         <div className="grid gap-2">
-          <Link
+          {/* <Link
             className={`flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium ${pathname === "/admin" ? "bg-gray-100/50" : ""
               } transition-colors hover:bg-gray-100 dark:hover:bg-gray-800`}
             href="/admin"
           >
             <HomeIcon className="mr-4 h-4 w-4" />
             Dashboard
-          </Link>
+          </Link> */}
           <Link
             className={`flex h-10 items-center justify-start px-4 rounded-r-xl text-sm font-medium ${pathname === "/admin/subject" ? "bg-gray-100/50" : ""
               } transition-colors hover:bg-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800`}

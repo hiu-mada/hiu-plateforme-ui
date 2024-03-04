@@ -1,12 +1,8 @@
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 const AdminUI = () => {
-  return (
-    <div>
-      <h1 className="">admin ui</h1>
-    </div>
-
-  )
+  return redirect("/admin/subject")
 }
 
 export default AdminUI
