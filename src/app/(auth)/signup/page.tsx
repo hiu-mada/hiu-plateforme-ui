@@ -122,7 +122,7 @@ const Page = () => {
                 </FormItem>
                 }
                 />
-                <Button type="submit" className="mx-20 rounded-full transition-colors hover:text-white hover:border-blue-900 hover:bg-blue-900 items-center justify-center border-white bg-blue-950 dark:hover:bg-neutral-100 dark:bg-neutral-100 dark:hover:text-blue-900 dark:hover:border-blue-900">Submit</Button>
+                <Button type="submit" className="mx-20 rounded-full transition-colors hover:text-white hover:border-blue-900 hover:bg-blue-900 items-center justify-center border-white bg-blue-950 dark:bg-neutral-100 dark:hover:text-blue-900 dark:hover:border-blue-900">Submit</Button>
               </form>
             </Form>
           </div>
