@@ -26,22 +26,20 @@ const Details = () => {
             {team ? (
                 <div className={styles.team_layout} >
                     <div className={styles.team_description} >
-                        <div className={styles.team_text} >
-                            <h1> {team.name}</h1>
-                            <p> {team.University.name}</p>
-                            <p>{team.slogan}</p>
-                        </div>
-                        <div className={styles.team_descrition_pictures} >
+                        <div className={styles.description}>
                             <img className={styles.university_pic} src={team.University.url} alt="user_profile" />
                         </div>
-                        <div className={styles.subject} >
-                            <div className={styles.team_description_votes} >
-                                <h1>Votes: {team.votes} </h1>
-                            </div>
-                            <h1>Subject: </h1>
+
+                        <div className={styles.votes}>
+                            <h1> {team.name}</h1>
+                            <p className={styles.univer} > {team.University.name}</p>
+                            <p className={styles.slogan}>{team.slogan}</p>
+                            <h2>Subject: </h2>
                             <h3>{team.subject.name}</h3>
-                            <p>{team.subject.description}</p>
+                            <p className={styles.description_uni}>{team.subject.description} </p>
+                            <p className={styles.votess}>Votes: {team.votes} </p>
                         </div>
+
                     </div>
                     <h1 className={styles.title} >Team members</h1>
                     <div className={styles.team_members} >
@@ -57,10 +55,9 @@ const Details = () => {
                                             style={{
                                                 borderRadius: '50%',
                                                 overflow: 'hidden',
-                                                width: '20em',
-                                                height: '20em',
+                                                width: '8em',
+                                                height: '8em',
                                                 position: 'relative',
-                                                margin: '25px',
                                             }}
                                         />
                                     </div>

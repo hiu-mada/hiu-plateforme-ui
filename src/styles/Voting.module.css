@@ -2,21 +2,29 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 50px ;
+    justify-content: center;
 }
 .votingchild {
-    border: solid 2px gray;
+    border: solid 2px rgb(59 130 246);
     width: 8em;
     height: 8em;
     margin: 20px;
     border-radius: 8px;
     padding: 10px;
-    color: rgb(90, 87, 87);
+    color: rgb(59 130 246);
+    cursor: pointer;
     
 }
+
 .votingchild:hover {
-    border-color: #005187;
-    background-color: #005187;
+    border-color:  rgb(59 130 246);
+    background-color:  rgb(59 130 246);
     color: white;
+}
+
+.votingchild input[type="radio"]:checked{
+    background-color:  rgb(59 130 246);
+    padding: 20px;
 }
 
 .label{
@@ -27,9 +35,8 @@
     text-align: center;
 }
 
-
 .button {
-    background-color: #005187;
+    background-color:  rgb(59 130 246);
     color: white;
     border: none;
     padding: 8px 16px;

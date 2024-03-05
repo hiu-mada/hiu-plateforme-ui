@@ -34,7 +34,7 @@ const Page = () => {
                             <p className={styles.votes} >Votes: {team.votes} </p>
                         </div>
                         <p className={styles.University} >{team.University.name} </p>
-                        <p className={styles.subjectText} >Subject</p>
+                        <p className={styles.subjectText} >SUBJECT</p>
                         <div className={styles.user_pic_subject}>
                             <div>
                                 <p className={styles.styleslogan}>{team.subject.name} </p>
@@ -42,15 +42,15 @@ const Page = () => {
                             <div className={styles.user_pic}>
                                 <ul className={styles.profile_pic_list} >
                                     {team.User?.slice(0, 2).map(user => (
-                                        <li key={user.id}>
+                                        <li key={user.id} >
                                             <Image
                                                 src={user.profile_picture}
                                                 width={35}
-                                                height={35} 
+                                                height={35}
                                                 style={{
-                                                  borderRadius: '50%',
-                                                  overflow: 'hidden',
-                                                  border: '2px solid #fff',
+                                                    borderRadius: '50%',
+                                                    overflow: 'hidden',
+                                                    border: '2px solid #fff',
                                                 }}
                                                 alt=""
                                             />
@@ -62,12 +62,16 @@ const Page = () => {
                                 )}
                             </div>
                         </div>
-                        <Link href={`/participantlist/${team.id}`} className={styles.button} >
-                            Details
-                        </Link>
-                        <Link href={`/voting`} className={styles.button} >
-                            Vote
-                        </Link>
+                        <div className={styles.link}>
+                            <Link href={`/participantlist/${team.id}`} className={styles.button_details} >
+                                DETAILS
+                            </Link>
+                            <Link href={`/voting`} className={styles.button} >
+                                Vote
+                            </Link>
+
+                        </div>
+
                     </div>
                 ))}
             </div>
