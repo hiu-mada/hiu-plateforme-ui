@@ -74,7 +74,7 @@ const Page = () => {
                   <FormLabel>Name</FormLabel>
                   <FormControl>
                     <Input placeholder="Hack-IU"
-                      {...field}  className="bg-gray-300  text-blue-950" />
+                      {...field}  className="bg-gray-100  text-blue-950" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -88,7 +88,7 @@ const Page = () => {
                   <FormLabel>Email</FormLabel>
                   <FormControl>
                     <Input placeholder="Hack-IU@gmail.com"
-                      {...field} className="bg-gray-300 text-blue-950" />
+                      {...field} className="bg-gray-100 text-blue-950" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -102,7 +102,7 @@ const Page = () => {
                   <FormLabel>Password</FormLabel>
                   <FormControl>
                     <Input placeholder="********"
-                     type="password" {...field} className="bg-gray-300 text-blue-950"/>
+                     type="password" {...field} className="bg-gray-100 text-blue-950"/>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -116,13 +116,13 @@ const Page = () => {
                   <FormLabel>Confirm Password</FormLabel>
                   <FormControl>
                     <Input placeholder="********"
-                     type="password" {...field} className="bg-gray-300 text-blue-950"/>
+                     type="password" {...field} className="bg-gray-100 text-blue-950"/>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
                 }
                 />
-                <Button type="submit" className="mx-20 rounded-full transition-colors hover:text-white hover:border-blue-900 hover:bg-blue-900 items-center justify-center border-white bg-blue-950 dark:hover:bg-neutral-100 dark:bg-neutral-100 dark:hover:text-blue-900 dark:hover:border-blue-900">Submit</Button>
+                <Button type="submit" className="mx-20 rounded-full transition-colors hover:text-white hover:border-blue-900 hover:bg-blue-900 items-center justify-center border-white bg-blue-950 dark:bg-neutral-100 dark:hover:text-blue-900 dark:hover:border-blue-900">Submit</Button>
               </form>
             </Form>
           </div>
