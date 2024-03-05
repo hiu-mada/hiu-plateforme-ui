@@ -74,7 +74,7 @@ const Page = () => {
                   <FormLabel>Name</FormLabel>
                   <FormControl>
                     <Input placeholder="Hack-IU"
-                      {...field}  className="bg-gray-300  text-blue-950" />
+                      {...field}  className="bg-gray-100  text-blue-950" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -88,7 +88,7 @@ const Page = () => {
                   <FormLabel>Email</FormLabel>
                   <FormControl>
                     <Input placeholder="Hack-IU@gmail.com"
-                      {...field} className="bg-gray-300 text-blue-950" />
+                      {...field} className="bg-gray-100 text-blue-950" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -102,7 +102,7 @@ const Page = () => {
                   <FormLabel>Password</FormLabel>
                   <FormControl>
                     <Input placeholder="********"
-                     type="password" {...field} className="bg-gray-300 text-blue-950"/>
+                     type="password" {...field} className="bg-gray-100 text-blue-950"/>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -116,7 +116,7 @@ const Page = () => {
                   <FormLabel>Confirm Password</FormLabel>
                   <FormControl>
                     <Input placeholder="********"
-                     type="password" {...field} className="bg-gray-300 text-blue-950"/>
+                     type="password" {...field} className="bg-gray-100 text-blue-950"/>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
