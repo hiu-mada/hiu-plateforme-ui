@@ -2,85 +2,85 @@
 [![CI](https://github.com/hiu-mada/hui-plateforme-api/actions/workflows/ci.yml/badge.svg)](https://github.com/hiu-mada/hiu-plateforme-ui/actions/workflows/ci.yml)
 
 
-### **HIU-PLATEFORME-UI : Plateforme d'évaluation de challenges Cybersec**
+### **HIU-PLATEFORME-UI : Cybersec challenge evaluation platform**
 ## **Description:**
 
-*HIU-PLATEFORME-UI* est une plateforme complète et sécurisée conçue pour l'évaluation de challenges Cybersec. Elle offre un ensemble de fonctionnalités puissantes pour les administrateurs et les participants, permettant une expérience fluide et sécurisée.
+*HIU-PLATEFORME-UI* is a comprehensive and secure platform designed for the evaluation of Cybersec challenges. It offers a powerful set of features for administrators and participants, enabling a smooth and secure experience.
 
-## **Fonctionnalités:**
+## **Features:**
   
-* **Création des Sujets**
-Les administrateurs peuvent créer des challenges en définissant des sujets variés et stimulants.
-Ils peuvent également fournir des descriptions détaillées, des indices et des fichiers pertinents pour chaque challenge.
-La plateforme permet de personnaliser la difficulté des challenges pour répondre aux différents niveaux d'expertise des participants.
+* **Topic creation**
+Administrators can create challenges by defining varied and stimulating topics.
+They can also provide detailed descriptions, hints and relevant files for each challenge.
+The platform enables the difficulty of challenges to be customized to suit the different levels of expertise of participants.
 
-* **Soumission des Réponses (Flags)**
-Les participants peuvent facilement soumettre leurs réponses aux challenges via une interface intuitive.
-La plateforme prend en charge différents formats de réponses, tels que du texte brut, des fichiers ou des liens.
-Un système de suivi permet aux participants de visualiser l'état de leurs soumissions et de recevoir des notifications en cas de problème.
+* **Submit Responses (Flags)**
+Participants can easily submit their answers to challenges via an intuitive interface.
+The platform supports different response formats, such as plain text, files or links.
+A tracking system enables participants to view the status of their submissions and receive notifications in the event of problems.
 
-* **Évaluation Sécurisée**
-HIU-PLATEFORME-UI s'appuie sur une infrastructure robuste pour garantir la sécurité contre les tentatives de hacking.
-Des mesures de protection avancées sont intégrées pour prévenir toute exploitation malveillante de la plateforme.
-L'environnement d'évaluation est isolé et sécurisé, garantissant l'intégrité des challenges et des réponses.
+* **Secured valuation**
+  HIU-PLATEFORME-UI relies on a robust infrastructure to guarantee security against hacking attempts.
+Advanced protection measures are integrated to prevent any malicious exploitation of the platform.
+The evaluation environment is isolated and secure, guaranteeing the integrity of challenges and responses.
 
-* **Évaluation des Réponses**
+* **Response evaluation**
 La plateforme offre un système d'évaluation flexible et personnalisable.
 Les réponses peuvent être évaluées automatiquement par des scripts ou par des experts en cybersécurité.
 Un système de points permet de récompenser les participants en fonction de la justesse et de la rapidité de leurs réponses.
 
-* **Attribution des Points**
-Un système transparent et auditable attribue des points aux participants en fonction de leurs performances.
-Le tableau de bord affiche le classement en temps réel, encourageant une saine compétition entre les participants.
-Des rapports détaillés permettent aux participants de visualiser leurs points et d'identifier les domaines d'amélioration.
+* **Points allocation**
+A transparent, auditable system awards points to participants according to their performance.
+The dashboard displays rankings in real time, encouraging healthy competition between participants.
+Detailed reports enable participants to visualize their points and identify areas for improvement.
 
-* **Tableau de Bord**
-Un tableau de bord intuitif offre aux administrateurs une vue d'ensemble complète de l'activité de la plateforme.
-Ils peuvent suivre en temps réel les performances des groupes et des individus, identifier les challenges populaires et analyser les statistiques de participation.
-Des outils de filtrage et de recherche permettent de naviguer facilement dans les données et d'obtenir des insights précis.
+* **Dashboard**
+  An intuitive dashboard gives administrators a complete overview of platform activity.
+They can track the performance of groups and individuals in real time, identify popular challenges and analyze participation statistics.
+Filtering and search tools make it easy to navigate through data and obtain precise insights.
 
-* **Gestion des Utilisateurs**
-HIU-PLATEFORME-UI propose un système de gestion des utilisateurs sécurisé et flexible.
-Les administrateurs peuvent créer des comptes et définir des rôles et des permissions pour chaque utilisateur.
-Différents niveaux d'accès peuvent être définis pour garantir la confidentialité des données et la sécurité de la plateforme.
+* **User management**
+  HIU-PLATEFORME-UI offers a secure and flexible user management system.
+Administrators can create accounts and define roles and permissions for each user.
+Different levels of access can be defined to guarantee data confidentiality and platform security.
 
-* **Audit et Suivi des Activités**
-La plateforme enregistre des journaux d'activité détaillés pour chaque action effectuée.
-Les administrateurs peuvent auditer et suivre en temps réel les activités des participants et des administrateurs.
-Cette fonctionnalité permet de renforcer la sécurité, la responsabilisation et la transparence de la plateforme.
+* **Audit and Activity Monitoring**
+  The platform records detailed activity logs for every action performed.
+Administrators can audit and monitor the activities of participants and administrators in real time.
+This feature enhances the platform's security, accountability and transparency.
 
-##  Avantages:
-*  Sécurité et fiabilité:
-   Infrastructure robuste et mesures de protection avancées contre les attaques.
-*  Flexibilité et personnalisation:
-  Système d'évaluation adaptable aux besoins spécifiques.
-*  Transparence et équité:
-  Attribution des points claire et transparente.
-* Motivation et engagement:
-   Tableau de bord stimulant la compétition et l'apprentissage.
-* Contrôle et suivi:
-  Gestion des utilisateurs et audit des activités pour une meilleure gouvernance.
+## Advantages:
+* Security and reliability:
+   Robust infrastructure and advanced protection measures against attacks.
+* Flexibility and customization:
+  Evaluation system adaptable to specific needs.
+* Transparency and fairness:
+  Clear and transparent allocation of points.
+* Motivation and commitment:
+   Dashboard stimulating competition and learning.
+* Control and monitoring:
+  User management and activity auditing for better governance.
+  
+## **Users**:
 
-## **Utilisateurs**:
-
-- **Organisations :** Pour organiser des challenges Cybersec internes ou externes.
-- **Formateurs :** Pour évaluer les compétences des participants en cybersécurité.
-- **Participants:** Pour tester leurs connaissances et se comparer aux autres.
-
-## **Prérequis:**
+- **Organizations:** To organize internal or external Cybersec challenges.
+- **Trainers:** To assess participants' cybersecurity skills.
+- **Participants:** To test their knowledge and compare themselves with others.
+  
+## **Requirements:**
 
 * Node.js >= 16.0.0
 * Yarn ou npm
 
 ## **Installation:**
 
-1. Clonez le dépôt distant :
+1. Clone the remote repository :
 
 ```
 https://github.com/hiu-mada/hiu-plateforme-ui.git
 ```
 
-2. Installez les dépendances :
+2. Install dependencies :
 
 ```
 yarn install
@@ -92,7 +92,7 @@ ou
 npm install
 ```
 
-3. Démarrez l'application en mode développement :
+3. Start the application in development mode :
 
 ```
 yarn dev
@@ -104,12 +104,13 @@ ou
 npm run dev
 ```
 
-## **Utilisation:**
+## **How to use:**
 
-* Accédez à l'application dans votre navigateur web à l'adresse `http://localhost:3000`.
+* Access the application in your web browser at `http://localhost:3000`.
 
-**Contributeurs:**
+**Contributors:**
 
+* **[Michella](https://github.com/Michellah)**
 * **[Mihary Joël](https://github.com/miharyjoe)**
 * **[Rakotoniaina Sullivan](https://github.com/Sullivan1301)**
-
+* **[Ando Ramanantsoa](https://github.com/AndoKami)**
