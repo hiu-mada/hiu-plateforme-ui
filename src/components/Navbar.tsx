@@ -15,6 +15,7 @@ const links: linkProps[] = [
   { name: "Voting", href: "/voting" },
   { name: "List Participant", href: "/participantlist" },
   { name: "Subject", href: "/subject" },
+  { name: "Profile", href: "/profile" },
 ];
 
 const userHasAdminRole = () => {
