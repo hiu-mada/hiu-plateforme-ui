@@ -1,0 +1,13 @@
+.profileImage {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    background-image: url(/utilisateur.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.list {
+    list-style: none;
+}

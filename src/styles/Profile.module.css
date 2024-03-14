@@ -42,10 +42,6 @@
     object-fit: cover;
 }
 
-.image {
-
-}
-
 .profileInfo {
     flex-grow: 1;
 }
@@ -81,8 +77,8 @@
     padding: 8px 15px;
     border-radius: 25px;
     color: #fff;
-    margin-top: 10em;
-    margin-bottom: 1em;
+    margin-top: 8em;
+    width: 125px;
 }
 
 .buttonEdit:hover {
