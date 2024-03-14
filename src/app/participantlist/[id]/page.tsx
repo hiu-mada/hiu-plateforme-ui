@@ -27,7 +27,7 @@ const Details = () => {
                 <div className={styles.team_layout} >
                     <div className={styles.team_description} >
                         <div className={styles.description}>
-                            <img className={styles.university_pic} src={team.University.url} alt="user_profile" />
+                            <Image className={styles.university_pic} src={team.University.url} width={100} height={100} alt="user_profile" />
                         </div>
 
                         <div className={styles.votes}>

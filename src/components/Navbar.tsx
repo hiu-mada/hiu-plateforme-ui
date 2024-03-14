@@ -69,8 +69,8 @@ export const NavBar = () => {
       </div>
       <div className="flex items-center gap-x-8">
         <ModeToggle className="h-5 w-5 text-gray-300 cursor-pointer" />
-        {users.map(user => (
-          <li className={styles.list}>
+        {users.map((user, index) => (
+          <li key={index} className={styles.list}>
             <Link href="/profile">
               <div className={styles.profileImage}>
                 {profileImage ? (
