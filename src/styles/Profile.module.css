@@ -1,0 +1,122 @@
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10em;
+}
+
+.profileCard {
+    background-color: #f7f7f8;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 100em;
+    padding: 20px;
+    padding-top: 6em;
+    padding-left: 6em;
+    display: flex;
+    flex-direction: row;
+}
+
+.profileHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profileImage {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    position: absolute;
+    top: 9pc;
+    left: 8pc;
+    border: solid 6px #f7f7f8;
+    background-image: url(/utilisateur.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.profileImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileInfo {
+    flex-grow: 1;
+}
+
+.profileInfo h1 {
+    font-weight: bold;
+    font-size: 58px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.profileInfo h5 {
+    color: #8c8a8a;
+    font-weight: 10px;
+    font-size: 19px;
+}
+
+.additionalInfo {
+    margin-right: 10em
+}
+
+.additionalInfo p {
+    margin-bottom: 5px;
+    color: #8c8b8b;
+}
+
+.additionalInfo p:last-child {
+    margin-bottom: 0;
+}
+
+.buttonEdit {
+    background-color: #2699e5;
+    padding: 8px 15px;
+    border-radius: 25px;
+    color: #fff;
+    margin-top: 8em;
+    width: 125px;
+}
+
+.buttonEdit:hover {
+    font-weight: bold;
+}
+
+.description {
+    color: #636161;
+    padding-bottom: 20px;
+}
+
+.additionalInfo h1 {
+    color: #2699e5;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #555;
+}
+
+.additionalInfo span {
+    color: #2699e5;
+    border-radius: 50%;
+    border: solid 2px #2699e5;
+    padding: 8px;
+    margin-left: 20em;
+}
+
+.details {
+    background-color: #fff;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 30em;
+}
