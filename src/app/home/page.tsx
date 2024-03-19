@@ -5,6 +5,7 @@ import { Boxes } from '@/components/ui/background-boxes';
 import { cn } from '@/lib/utils';
 import { university } from '@/lib/listUniversity';
 import { partner } from '@/lib/ListPartner';
+import Info from '@/components/home/Info';
 const HomePage = () => {
   return (
   <>
@@ -18,6 +19,9 @@ const HomePage = () => {
       </div>
     </div>
   </section>
+  <section>
+        <Info/>
+      </section>
   <section className="mt-5">
     <ListComponent list = {university} name={{name : "university"}}/>
     <ListComponent list = {partner} name={{name : "Partner"}}/>
