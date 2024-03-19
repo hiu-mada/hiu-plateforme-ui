@@ -1,9 +1,11 @@
-import React from 'react'
+"use client"
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 import { TypewriterEffectSmooth } from './ui/typewriter-effect';
 import Link from 'next/link';
 
 const Landing = () => {
+  const isLogin = true; //TODO don't make it static
    const words = [
     {
       text: "Platfrom",
@@ -30,7 +32,9 @@ const Landing = () => {
       <span className="text-blue-500 dark:text-blue-500 ml-2">Cybersecurity and Haking.</span>
       </div>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+       { !isLogin ? (
+      <>
+      <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
           <Link href="/login">
           Join now
           </Link>
@@ -40,6 +44,10 @@ const Landing = () => {
               Signup
           </Link>
         </button>
+        </>
+        )
+        : ""
+        }
       </div>
     </div>
   );
