@@ -5,6 +5,8 @@ import { TeamChallenge } from '../../../components/utils/type';
 import { useParams } from 'next/navigation';
 import styles from '../../../styles/DetailsTeam.module.css'
 import Image from 'next/image';
+import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
+
 const Details = () => {
     const params = useParams();
     console.log(params?.id)
@@ -25,7 +27,7 @@ const Details = () => {
         <div>
             {team ? (
                 <div>
-                    <div className="grid items-start justify-start gap-6 px-4 text-center md:gap-12 md:px-6 xl:grid-cols-2 ">
+                    <div className="grid items-start justify-start gap-6 px-4 mr-10 text-center md:gap-12 md:px-6 xl:grid-cols-2">
                         <div className="space-y-4 mt-4 mb-4">
                             <Image className="mx-auto aspect-video overflow-hidden rounded-lg object-cover object-center"
                                 src={team.University.url}
@@ -33,13 +35,13 @@ const Details = () => {
                                 height={200}
                                 alt="user_profile" />
                             <div className="space-y-2">
-                                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-blue-500 dark:text-blue-400">{team.University.name} </h1>
+                                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">{team.University.name} </h1>
                                 <p className="text-gray-500 dark:text-gray-400">Description</p>
                             </div>
                         </div>
                         <div className="space-y-4 mb-8">
                             <div className="space-y-2">
-                                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl text-blue-500 dark:text-blue-400">Team: {team.name} </h2>
+                                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">Team: {team.name} </h2>
                                 <p className="text-gray-500 dark:text-gray-400">{team.slogan} </p>
                             </div>
                             <div className="border rounded-lg divide-y">
@@ -60,14 +62,14 @@ const Details = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full p-4 space-y-4 mt-3 bg-gray-100 dark:bg-gray-800">
+                    <div className="w-full p-4 space-y-4 mt-3">
                         <div className="mx-auto grid max-w-7xl gap-8 lg:gap-10 ">
                             <div className="space-y-3">
-                                <h1 className="text-3xl font-bold mb-8 mt-4 text-blue-500 dark:text-blue-400 mx-3">Team members</h1>
-                                <ul className="grid gap-4 md:grid-cols-2 xl:gap-6">
+                                <h1 className="text-3xl font-bold mb-8 mt-4  mx-3">Team members</h1>
+                                <ul className="grid gap-4 md:grid-cols-3 xl:gap-6 ">
                                     {team.User.map(user => (
-                                        <li key={user.id} className="grid gap-4 md:grid-cols-2 xl:gap-6 ">
-                                            <div className="flex items-start space-x-4">
+                                        <li key={user.id} className="grid gap-4 md:grid-cols-1 xl:gap-6">
+                                            <Card className="flex flex-col md:flex-row items-center md:items-start p-3">
                                                 <Image
                                                     className="rounded-full"
                                                     src={user.profile_picture}
@@ -79,11 +81,13 @@ const Details = () => {
                                                     }}
                                                     width="96"
                                                 />
-                                                <div className="space-y-1.5">
-                                                    <div className="font-semibold">{user.username}</div>
-                                                    <div className="text-sm text-gray-500 dark:text-gray-400">{user.email}</div>
-                                                </div> F
-                                            </div>
+                                                <CardHeader className="p-4">
+                                                    <div className="space-y-1.5">
+                                                        <div className="font-semibold">{user.username}</div>
+                                                        <div className="text-sm text-gray-500 dark:text-gray-400">{user.email}</div>
+                                                    </div>
+                                                </CardHeader>
+                                            </Card>
                                         </li>
                                     ))}
                                 </ul>
