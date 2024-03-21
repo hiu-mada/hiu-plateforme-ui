@@ -59,35 +59,71 @@ export const NavBar = () => {
   const user = users[0];
   return (
     <div className="w-full max-w-7xl mx-auto items-center justify-between px-5 sm:px-6 py-5 lg:px-0 flex">
-      <div className="flex items-center">
-        <Link href="/home" className="w-32">
-          {/*<Image src={Logo} alt="logo netflix" priority />*/}
-          <h1 className="font-bold text-xl">Hack-IO</h1>
-        </Link>
-        <ul className="lg:flex gap-x-4 ml-14 hidden ">
-          {links.map((link, idx) => (
-            <div key={idx}>
-              {pathName === link.href ? (
-                <li>
-                  <Link
-                    href={link.href}
-                    className="font-semibold underline text-sm-5 "
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ) : (
-                <li>
-                  <Link className="font-normal text-sm-5" href={link.href}>
-                    {link.name}
-                  </Link>
-                </li>
-              )}
-            </div>
-          ))}
-        </ul>
-      </div>
 
+      <nav className="px-2 sm:px-4 py-2.5 rounded">
+        <div className="container flex flex-wrap justify-between items-center mx-auto">
+          <Link className="flex items-center" href="/home">
+            <span className="self-center text-xl font-semibold whitespace-nowrap">Hack-IO</span>
+          </Link>
+          <div className="md:hidden lg;hidden ml-2">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="outline">
+                  <MenuIcon className="w-6 h-6" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56">
+                <DropdownMenuGroup >
+                  {links.map((link, idx) => (
+                    <div key={idx}>
+                      {pathName === link.href ? (
+                        <DropdownMenuItem>
+                          <Link
+                            href={link.href}
+                            className="underline"
+                          >
+                            {link.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      ) : (
+                        <DropdownMenuItem>
+                          <Link className="font-normal text-sm-5 hover:bg-gray-50" href={link.href}>
+                            {link.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      )}
+                    </div>
+                  ))}
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+          <div className="hidden w-full md:block md:w-auto ml-4" id="mobile-menu">
+            <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              {links.map((link, idx) => (
+                <div key={idx}>
+                  {pathName === link.href ? (
+                    <li>
+                      <Link
+                        href={link.href}
+                        className="block underline py-2 pr-4 pl-3 text-gray-700 rounded md:bg-transparent md:text-gray-700 md:p-0  dark:text-white"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ) : (
+                    <li>
+                      <Link className="font-normal text-sm-5" href={link.href}>
+                        {link.name}
+                      </Link>
+                    </li>
+                  )}
+                </div>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div className="flex flex-1 items-center justify-end space-x-4">
         <nav className="flex items-center space-x-2">
           <ModeToggle className="h-5 w-5 text-gray-300 cursor-pointer" />
@@ -167,3 +203,25 @@ export const NavBar = () => {
     </div>
   );
 };
+
+
+function MenuIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="4" x2="20" y1="12" y2="12" />
+      <line x1="4" x2="20" y1="6" y2="6" />
+      <line x1="4" x2="20" y1="18" y2="18" />
+    </svg>
+  )
+}
