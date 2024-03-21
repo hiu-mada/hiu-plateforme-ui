@@ -8,7 +8,8 @@ export const SubjectMock = [
   {
     id: 2,
     title: "History",
-    description: "Overview of historical events",
+    description:
+      "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
     max_score: 90,
   },
   {
