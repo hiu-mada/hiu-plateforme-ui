@@ -1,5 +1,9 @@
 import { SubjectMock } from "@/components/mock/SubjectMock";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 
 export default function Page({ params }: { params: { id: string } }) {
@@ -25,11 +29,27 @@ export default function Page({ params }: { params: { id: string } }) {
                 </div>
               </div>
               <div className="pt-4">
-                <Button size="sm">
-                  <Link href="#">
-                    Edit
-                  </Link>
-                </Button>
+   <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="outline">Add Your Response</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Responses
+            </Label>
+            <Textarea
+              id="response"
+              className="col-span-3"
+            />
+          </div>
+        </div>
+        <DialogFooter>
+          <Button type="submit">Submit Response</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
               </div>
             </div>
           </div>
