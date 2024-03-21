@@ -1,4 +1,5 @@
 import SideBar from '@/components/Sidebar/sidebar'
+import NextTopLoader from 'nextjs-toploader'
 import React, { ReactNode } from 'react'
 
 const layout = ({children} : {children : ReactNode}) => {
@@ -6,6 +7,7 @@ const layout = ({children} : {children : ReactNode}) => {
 
 <div suppressHydrationWarning={true}>
         <div>
+            <NextTopLoader color="#000" showSpinner={false}/>
             <div className="flex h-screen overflow-hidden">
               <SideBar />
               <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">

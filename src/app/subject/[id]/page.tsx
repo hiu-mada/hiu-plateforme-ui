@@ -1,6 +1,10 @@
 "use client"
 import { SubjectMock } from "@/components/mock/SubjectMock";
-import { log } from "console";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -20,34 +24,44 @@ export default function Page({ params }: { params: { id: string } }) {
   return (
     <div>
       {subject ? (
-        <div className="p-20">
-          <div
-            className="overflow-hidden rounded-lg border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-gray-700 "
-          >
-            <textarea
-              id="OrderNotes"
-              className="w-full resize-none border-none align-top focus:ring-0 sm:text-sm dark:bg-gray-800 dark:text-white p-5"
-              rows={25}
-              value={answer}
-              onChange={(e) => setAnswer(e.target.value)}
-              placeholder="Enter your answer..."
-            ></textarea>
-
-            <div className="flex items-center justify-end gap-2 bg-white p-3 dark:bg-gray-800">
-              <button
-                type="button"
-                className="rounded bg-gray-200 px-3 py-1.5 text-sm font-medium text-gray-700 hover:text-gray-600 dark:bg-gray-700 dark:text-gray-200 dark:hover:text-gray-100"
-                onClick={clearInput}
-              >
-                Clear
-              </button>
-              <Link
-                className="rounded bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700"
-                href={`/subject/`}
-                onClick={handleAdd}
-              >
-                Submit
-              </Link>
+        <div>
+          <div>
+            <div className="mx-auto prose prose-sm p-6 grid gap-6">
+              <div>
+                <h1 className="text-3xl font-bold">{subject.title}</h1>
+                <p className="text-gray-500 dark:text-gray-400">{subject.description}</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <dl className="grid grid-cols-2 gap-1">
+                    <dt>Maximum Score</dt>
+                    <dd>{subject.max_score}</dd>
+                  </dl>
+                </div>
+              </div>
+              <div className="pt-4">
+   <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="outline">Add Your Response</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Responses
+            </Label>
+            <Textarea
+              id="response"
+              className="col-span-3"
+            />
+          </div>
+        </div>
+        <DialogFooter>
+          <Button type="submit">Submit Response</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+              </div>
             </div>
           </div>
         </div>

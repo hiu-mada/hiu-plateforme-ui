@@ -36,7 +36,7 @@ const ProfilePage = () => {
                             <h1>{user.user_name}</h1>
                             <h5>{user.email}</h5>
                             <h5>{user.university.name}</h5>
-                            <p className={styles.description}>{user.university.descritpion}</p>
+                            <p className={styles.description}>{user.university.description}</p>
                         </div>
                         <div className={styles.buttonEdit}>
                             <label htmlFor="upload" >Edit profile</label>
