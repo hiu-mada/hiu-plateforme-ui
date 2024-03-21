@@ -62,7 +62,7 @@ export default function Page({ params }: { params: { id: string } }) {
                     {...register('response')}
                   />
                 </div>
-              {errors.response && <span className="text-red-500">{errors.response.message}</span>}
+              {errors.response && <span className="text-red-500">minimun 1 caracter</span>}
               </div>
               <DialogFooter>
                 <Button type="submit">Submit Response</Button>
