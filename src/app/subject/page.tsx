@@ -24,7 +24,7 @@ const page = () => {
                           className="px-3 py-1 bg-gray-900 text-gray-50 rounded-md text-sm font-medium hover:bg-gray-800 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90"
                           href={`/subject/${item.id}`}
                         >
-                          Show details
+                          Respond
                         </Link>
                       </div>
                     </div>
