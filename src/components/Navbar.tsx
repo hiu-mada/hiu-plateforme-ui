@@ -44,7 +44,6 @@ interface SiteHeaderProps {
 }
 const links: linkProps[] = [
   { name: "Home", href: "/home" },
-  { name: "Voting", href: "/voting" },
   { name: "List Participant", href: "/participantlist" },
   { name: "Subject", href: "/subject" },
 ];
